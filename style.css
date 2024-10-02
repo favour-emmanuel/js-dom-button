@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  font-family: "Source Code Pro", system-ui;
+}
+
+h1 {
+  text-align: center;
+  color: #ebebeb;
+  margin-top: 3rem;
+}
+
+.container {
+  height: 70vh;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2929;
+  padding: 2rem 2.5rem;
+  border: 1px solid #1bad6954;
+  border-radius: 17px;
+  box-shadow: 0 8px 8px 8px #0c8a645b;
+}
+
+.container h1 {
+  color: #1bad82;
+  font-size: 28px;
+  margin: 1.6rem 0;
+}
+
+.container span {
+  background-color: #cfa911;
+  padding: 2px 4px;
+  color: #2e0b0b;
+}
+
+#card {
+  text-align: center;
+  font-size: 24px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: #1bad82;
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+#card.revealed {
+  background-color: yellow;
+  transform: rotateY(180deg);
+}
